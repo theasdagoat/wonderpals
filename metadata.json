@@ -1,0 +1,6 @@
+{
+  "name": "WonderPals - Safe Creative Social Universe for Kids",
+  "description": "A safe, joyful, and creative social community designed specifically for kids. Share drawings, craft projects, voice notes, earn kindness badges, and connect with safe friends under parental supervision.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
