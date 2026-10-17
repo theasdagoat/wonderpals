@@ -17,12 +17,13 @@ jobs:
 
       - name: Install and Build Web App
         run: |
-          npm install --no-audit --no-fund
+          rm -f package-lock.json
+          npm install --legacy-peer-deps
           npm run build
 
       - name: Initialize Capacitor and Android Platform
         run: |
-          npm install @capacitor/core @capacitor/cli @capacitor/android --no-audit --no-fund
+          npm install @capacitor/core @capacitor/cli @capacitor/android --legacy-peer-deps
           npx cap init "WonderPals" "com.wonderpals.app" --web-dir=build
           npx cap add android
           npx cap sync android
@@ -44,4 +45,3 @@ jobs:
         with:
           name: app-debug-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
-
