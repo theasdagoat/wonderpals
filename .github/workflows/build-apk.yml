@@ -23,7 +23,7 @@ jobs:
       - name: Initialize Capacitor and Android Platform
         run: |
           npm install @capacitor/core @capacitor/cli @capacitor/android
-          npx cap init "WonderPals" "com.wonderpals.app" --web-dir=dist
+          npx cap init "WonderPals" "com.wonderpals.app" --web-dir=build
           npx cap add android
           npx cap sync android
 
